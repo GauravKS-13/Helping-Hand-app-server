@@ -27,7 +27,10 @@ app.use( '/api/donor', donorRouter );
 app.use( '/api/requester', requesterRouter );
 app.use( '/api/allrequester', getAllrequesterRouter );
 
+// page not found handler
 app.use(  pageNotFoundHandler );
+
+// error Handler
 app.use( errorHandler );
 
 const PORT = process.env.PORT || 3000;
